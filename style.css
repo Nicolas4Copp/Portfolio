@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+}
+
+header{
+    font-size: 1.5vw;
+    padding-left: 8.4vw;
+    background-color: black;
+}
+header > h1{
+    color: white;
+    font-size: 3em;
+    padding-top: 18vh;
+    padding-bottom: 20px;
+}
+header > p{
+    color: rgb(195, 195, 195);
+    padding-bottom: 2.5vh;
+}
+header > p::before{
+    content: "|";
+    color: rgba(141, 138, 138, 0.741);
+}
+header > p::after{
+    content: "|";
+    color: rgba(141, 138, 138, 0.741);
+}
+header > p > span::before{
+    content: "|";
+    color: rgba(141, 138, 138, 0.741);
+}
+
+main{
+    background-color: wheat;
+    padding-top: 5vh;
+}
+main > section{
+    display: flex;
+}
+
+main > #About{
+    gap: 18vw;
+    margin: 0px 17vw;
+}
+
+main > #projects{
+    gap: 5vw;
+    margin: 0px 12vw;
+}
+
+picture > img{
+    width: 25vw;
+    border-radius: 12px;
+}
+article > p{
+    text-align: justify;
+    width: 300px;
+}
+
+main > h2{
+    text-align: center;
+    margin: 5vw;
+}
+
+#projects > article{
+    display: flex;
+    flex-direction: column; 
+    background-position: center;
+    background-size: cover;
+    height: 18vw;
+    width: 2000px;
+}
+#projects > article > p{
+    margin-top: auto;
+    margin-bottom: 0;
+    background-color: #8080809c;
+    width: 100%;
+}
+
+#SAIBER{
+    background: url("https://i.postimg.cc/k4rMWTPq/SAIBER.png");
+}
+
+#dulce{
+    background-image: url('https://i.postimg.cc/PqNWcrcq/Logo-Dulce.png');
+}
+
+@media (max-width: 918px){
+    header{
+        font-size: 3vw;
+    }
+    main > section{
+        display: flex;
+        gap: 10vh;
+        margin: 0px 5vw 15vw 5vw;
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
+
+    picture > img{
+        width: 40vw ;
+    }
+    article > p{
+        text-align: justify;
+        width: 300px;
+    }
+    #projects > article{
+    height: 75vw;
+    width: 65vw;
+    }
+    #projects > article > p{
+    
+    background-color: #8080809c;
+    width: 100%;
+}
+}
