@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+:root{
+    --cor1: rgba(141, 138, 138, 0.757);
+}
+
 header{
     font-size: 1.5vw;
     padding-left: 8.4vw;
@@ -21,62 +25,90 @@ header > p{
 }
 header > p::before{
     content: "|";
-    color: rgba(141, 138, 138, 0.741);
+    color: var(--cor1);
 }
 header > p::after{
     content: "|";
-    color: rgba(141, 138, 138, 0.741);
+    color: var(--cor1);
 }
 header > p > span::before{
     content: "|";
-    color: rgba(141, 138, 138, 0.741);
+    color: var(--cor1);
 }
 
 main{
-    background-color: wheat;
+    background-color: #F2E6CF;
     padding-top: 5vh;
 }
 main > section{
     display: flex;
+    gap: 10vh;
+    margin: 0px 5vw 15vw 5vw;
+    flex-wrap: wrap;
+    justify-content: center;   
 }
 
 main > #About{
-    gap: 18vw;
+    gap: 10vw;
     margin: 0px 17vw;
 }
-
 main > #projects{
-    gap: 5vw;
+    gap: 8vw;
     margin: 0px 12vw;
+}
+main > h2{
+    text-align: center;
+    margin: 5vw;
 }
 
 picture > img{
     width: 25vw;
     border-radius: 12px;
 }
+
+article > h2{
+    margin-bottom: .5em;
+}
 article > p{
+    text-indent: 15px;
     text-align: justify;
     width: 300px;
 }
 
-main > h2{
-    text-align: center;
-    margin: 5vw;
-}
+
 
 #projects > article{
     display: flex;
     flex-direction: column; 
     background-position: center;
     background-size: cover;
-    height: 18vw;
-    width: 2000px;
+    height: 24vw;
+    width: 30vw;
 }
 #projects > article > p{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
     margin-top: auto;
     margin-bottom: 0;
     background-color: #8080809c;
-    width: 100%;
+    font-size: 1.3vw;
+    color: #ffffff;
+    width: 28vw;
+    padding: 0 1vw;
+}
+#projects > article:hover > p{
+    opacity: 1;
+}
+
+a{
+    text-align: center;
+    background-color: #D26760;
+    padding: 8px;
+    border-radius: 0px 0px 6px 6px;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+    color: #03636a;
 }
 
 #SAIBER{
@@ -87,16 +119,13 @@ main > h2{
     background-image: url('https://i.postimg.cc/PqNWcrcq/Logo-Dulce.png');
 }
 
+#celebratory{
+    background-image: url('https://i.postimg.cc/s2Z5m2tw/celebratory.png');
+}
+
 @media (max-width: 918px){
     header{
         font-size: 3vw;
-    }
-    main > section{
-        display: flex;
-        gap: 10vh;
-        margin: 0px 5vw 15vw 5vw;
-        flex-wrap: wrap;
-        justify-content: center;   
     }
 
     picture > img{
@@ -107,12 +136,17 @@ main > h2{
         width: 300px;
     }
     #projects > article{
-    height: 75vw;
-    width: 65vw;
+    height: 65vw;
+    width: 55vw;
+    margin-top: 30px
     }
     #projects > article > p{
+    font-size: 3.5vw;
+    width: 96.4%;
+    opacity: 1;   
+    }
     
-    background-color: #8080809c;
-    width: 100%;
-}
+    a{
+        padding: 1.5vw;
+    }
 }
