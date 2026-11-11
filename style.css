@@ -70,9 +70,10 @@ article > h2{
     margin-bottom: .5em;
 }
 article > p{
+    font-size: 1.2vw;
     text-indent: 15px;
     text-align: justify;
-    width: 300px;
+    width: 400px;
 }
 
 
@@ -119,8 +120,16 @@ a:-webkit-any-link{
     background-image: url('https://i.postimg.cc/PqNWcrcq/Logo-Dulce.png');
 }
 
-#celebratory{
-    background-image: url('https://i.postimg.cc/s2Z5m2tw/celebratory.png');
+#App{
+    background-image: url('https://i.postimg.cc/HkLMm7BN/Celebratory-Sites.png');
+}
+
+@media (max-width:1830px){
+    article > p{
+        font-size: 2vw;
+    }
+
+
 }
 
 @media (max-width: 918px){
@@ -134,6 +143,7 @@ a:-webkit-any-link{
     article > p{
         text-align: justify;
         width: 300px;
+        font-size: 2vw;
     }
     #projects > article{
     height: 65vw;

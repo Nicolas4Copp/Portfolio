@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+        }
+
+        header{
+            font-size: 1.5vw;
+            background-color: black;
+        }
+        header > h1{
+            text-align: center;
+            color: white;
+            font-size: 3em;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding-top: 8vh;
+            padding-bottom: 8vh;
+        }
+        header > p{
+            text-align: center;
+            color: rgb(195, 195, 195);
+            padding-bottom: 2.5vh;
+            font-size: 3vw;
+        }
+
+        main{
+            background-color: #F2E6CF;
+            padding-top: 5vh;
+            padding-bottom: 60px;
+        }
+        article > p{
+            font-size: 1.9vw;
+            padding: 20px;
+            text-indent: 15px;
+            text-align: justify;
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: 3vw;
+            width: 165px;
+        }
+        #seta{
+            width: 100px;
+        }
+
+        .comp{
+            background-color: white;
+            margin: 50px 0px;
+            text-align: center;
+        }
+        .comp > img{
+            width: 45%;
+        }
+
+        #txtapp{
+            font-size: 3em;
+            text-align: center;
+            margin: 100px;
+        }
+        #insta-wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        #insta{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: -14px;
+        }
+        #insta-more{
+            background-color: #D26760;
+            border-radius: 0px 0px 6px 6px;
+            cursor: pointer;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.25rem;
+            text-decoration: underline;
+            padding: 4px 8px;
+            max-width: 540px;
+            min-width: 475px;
+            width: 100%;
+        }
+
+        ul{
+           font-size: 1.9vw; 
+        }
+
+        @media (max-width: 918px) {
+            article > p{    
+                font-size: 3.5vw;
+            }
+            article{
+                display: flex;
+                flex-direction: column; 
+
+                gap: 500px;
+            }
+            a{
+                font-size: 4vw;
+            }
+            ul{
+                font-size: 3vw;
+                margin: 2em 0px;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>SAIBER</h1>
+        <p>Sistema Automático de Irrigação à Base de Energia Renovável <br>
+        Renewable Energy-Powered Automated Irrigation System
+        </p>
+    </header>
+    <main>
+        <a href="home.html" rel="prev" ><img id="seta" src="imgs/seta.png" alt="Link para página principal"> Back</a>
+
+        <section>
+            <article>
+                <p>Developed in 2024 as a collaborative project with my classmates at InediTec School, this project was designed to address the needs of people who spend extended periods away from home and require a reliable solution to keep their plants properly watered and cared for.
+                <br>
+                The project consists of a low-cost, sustainable automated irrigation system that also monitors soil pH levels, helping users maintain suitable conditions for plant growth while reducing the need for constant manual maintenance.</p>
+            </article>
+            <ul><h2>Material and components</h2>
+                <li><abbr title="Used to generate electrical power for the system, promoting renewable energy use and sustainability.">2 Solar Panels;</abbr></li>
+                <li><abbr title="Responsible for controlling and activating the system's electronic components.">1 Arduino Micro Board;</abbr></li>
+                <li><abbr title="Used to visually indicate soil moisture conditions through a color-coded signal.">1 Traffic Light Module;</abbr></li>
+                <li><abbr title="Measures the soil's moisture levels.">1 Soil Moisture Sensor;</abbr></li>
+                <li><abbr title="Responsible for pumping and distributing water to the plants.">1 12V Water Pump;</abbr></li>
+                <li><abbr title="Designed to measure the soil's pH levels.">1 pH Sensor (Prototype);</abbr></li>
+                <li><abbr title=" Manages battery charging, allowing the system to operate using stored energy when sunlight is unavailable.">1 Battery Charging Module;</abbr></li>
+            </ul>
+        </section>
+
+        <div id="insta-wrap">
+            <div id="insta">
+                <blockquote
+                    class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/DCT2EyEurH9/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    data-instgrm-version="14"
+                    style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);"
+                ></blockquote>
+            </div>
+            <button id="insta-more" type="button" aria-expanded="false">View more</button>
+        </div>
+        <script async src="//www.instagram.com/embed.js"></script>
+        <script>
+            (function () {
+                const permalink = 'https://www.instagram.com/p/DCT2EyEurH9/?utm_source=ig_embed&utm_campaign=loading';
+                const container = document.getElementById('insta');
+                const button = document.getElementById('insta-more');
+                let showCaption = false;
+
+                function renderEmbed() {
+                    const captionAttr = showCaption ? ' data-instgrm-captioned' : '';
+                    container.innerHTML =
+                        '<blockquote class="instagram-media"' + captionAttr +
+                        ' data-instgrm-permalink="' + permalink + '"' +
+                        ' data-instgrm-version="14"' +
+                        ' style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);">' +
+                        '</blockquote>';
+
+                    if (window.instgrm && window.instgrm.Embeds) {
+                        window.instgrm.Embeds.process();
+                    }
+                }
+
+                button.addEventListener('click', function () {
+                    showCaption = !showCaption;
+                    button.textContent = showCaption ? 'View less' : 'View more';
+                    button.setAttribute('aria-expanded', String(showCaption));
+                    renderEmbed();
+                });
+            })();
+        </script>
+
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aut nostrum sit in unde dolor atque expedita iusto. Dolorem quod minima maiores quae quaerat atque, voluptas voluptate quidem obcaecati ratione.</p>
+    </footer>
+</body>
+</html>
