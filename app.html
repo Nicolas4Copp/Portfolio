@@ -27,7 +27,7 @@
             padding-bottom: 60px;
         }
         article > p{
-            font-size: 1.9vw;
+            font-size: 1.5em;
             padding: 20px;
             text-indent: 15px;
             text-align: justify;
@@ -35,21 +35,27 @@
 
         #iphone{
             margin: 0 auto;
-            height: 70vh;
-            width: 17.5vw;
+            height: 660px;
+            width: 310px;
             background: url(imgs/frame-iphone.png) no-repeat ;
             background-size: cover;
             padding-right: 45px;
             padding-bottom: 59px;
         }
 
-        #tela{
+        #tela-wrap{
             position: relative;
-            top: 110px;
-            left: 28px;
-            width: 380px;
-            height: 670px;
-            
+            top: 90px;
+            left: 25px;
+            width: 310px;
+            height: 542px;
+            overflow: hidden;
+        }
+        #tela{
+            display: block;
+            width: calc(100% + 17px);
+            height: 100%;
+            border: 0;
         }
         a{
             display: flex;
@@ -84,9 +90,6 @@
         }
 
         @media (max-width: 918px) {
-            article > p{    
-                font-size: 3.5vw;
-            }
             article{
                 display: flex;
                 flex-direction: column; 
@@ -139,7 +142,9 @@
         </section>
         <h2 id="txtapp">Actual App working online</h2>
         <section id="iphone">
-                 <iframe id="tela" frameborder="0px" src="https://shopping-lists-budget-manager.ai.studio"></iframe>
+                 <div id="tela-wrap">
+                     <iframe id="tela" frameborder="0" src="https://shopping-lists-budget-manager.ai.studio"></iframe>
+                 </div>
         </section>
     </main>
     <footer>
