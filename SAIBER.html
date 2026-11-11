@@ -9,13 +9,12 @@
         }
 
         header{
-            font-size: 1.5vw;
             background-color: black;
         }
         header > h1{
             text-align: center;
             color: white;
-            font-size: 3em;
+            font-size: 6em;
             font-family:Georgia, 'Times New Roman', Times, serif;
             padding-top: 8vh;
             padding-bottom: 8vh;
@@ -24,7 +23,7 @@
             text-align: center;
             color: rgb(195, 195, 195);
             padding-bottom: 2.5vh;
-            font-size: 3vw;
+            font-size: 3em;
         }
 
         main{
@@ -33,7 +32,7 @@
             padding-bottom: 60px;
         }
         article > p{
-            font-size: 1.9vw;
+            font-size: 1.5em;
             padding: 20px;
             text-indent: 15px;
             text-align: justify;
@@ -51,20 +50,11 @@
             width: 100px;
         }
 
-        .comp{
-            background-color: white;
-            margin: 50px 0px;
-            text-align: center;
-        }
-        .comp > img{
-            width: 45%;
+        h2{
+            font-size: 3em;
+            padding-left: 2%;
         }
 
-        #txtapp{
-            font-size: 3em;
-            text-align: center;
-            margin: 100px;
-        }
         #insta-wrap{
             display: flex;
             flex-direction: column;
@@ -87,17 +77,18 @@
             text-decoration: underline;
             padding: 4px 8px;
             max-width: 540px;
-            min-width: 475px;
+            min-width: 100px;
             width: 100%;
         }
 
         ul{
            font-size: 1.9vw; 
+           margin: 2em 1em;
         }
 
         @media (max-width: 918px) {
             article > p{    
-                font-size: 3.5vw;
+                font-size: 1.2em;
             }
             article{
                 display: flex;
@@ -110,7 +101,7 @@
             }
             ul{
                 font-size: 3vw;
-                margin: 2em 0px;
+                margin: 2em 1px;
             }
         }
     </style>
@@ -132,7 +123,8 @@
                 <br>
                 The project consists of a low-cost, sustainable automated irrigation system that also monitors soil pH levels, helping users maintain suitable conditions for plant growth while reducing the need for constant manual maintenance.</p>
             </article>
-            <ul><h2>Material and components</h2>
+            <h2>Material and components</h2>
+            <ul>
                 <li><abbr title="Used to generate electrical power for the system, promoting renewable energy use and sustainability.">2 Solar Panels;</abbr></li>
                 <li><abbr title="Responsible for controlling and activating the system's electronic components.">1 Arduino Micro Board;</abbr></li>
                 <li><abbr title="Used to visually indicate soil moisture conditions through a color-coded signal.">1 Traffic Light Module;</abbr></li>
@@ -141,6 +133,15 @@
                 <li><abbr title="Designed to measure the soil's pH levels.">1 pH Sensor (Prototype);</abbr></li>
                 <li><abbr title=" Manages battery charging, allowing the system to operate using stored energy when sunlight is unavailable.">1 Battery Charging Module;</abbr></li>
             </ul>
+            <article>
+                <h2>Development Process</h2>
+                <p>
+                We connected two solar panels to a backup battery system, integrating them with the irrigation motor to provide the power needed to operate the pump. Additionally, we assembled an Arduino-based system with a traffic light indicator to monitor and display soil moisture levels.
+                </p>
+                <p>We also developed the concept and initial programming for a pH sensor designed to collect soil pH measurements and send the data to a custom-built mobile application.</p>
+                <h2>Note:</h2>
+                <p>The pH monitoring and mobile application integration remained at the theoretical and prototype stages, as the project was not continued to full implementation.</p>
+            </article>
         </section>
 
         <div id="insta-wrap">

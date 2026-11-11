@@ -70,10 +70,10 @@ article > h2{
     margin-bottom: .5em;
 }
 article > p{
-    font-size: 1.3em;
+    font-size: 2em;
     text-indent: 15px;
     text-align: justify;
-    width: 300px;
+    width: 400px;
 }
 
 
@@ -133,6 +133,7 @@ a:-webkit-any-link{
         width: 40vw ;
     }
     article > p{
+        font-size: 1.2em;
         text-align: justify;
         width: 300px;
     }
