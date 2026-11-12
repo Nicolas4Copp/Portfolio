@@ -6,6 +6,7 @@
 
 :root{
     --cor1: rgba(141, 138, 138, 0.757);
+    
 }
 
 header{
@@ -38,7 +39,8 @@ header > p > span::before{
 
 main{
     background-color: #F2E6CF;
-    padding-top: 5vh;
+    padding: 5vh 0px;
+    
 }
 main > section{
     display: flex;
@@ -122,6 +124,12 @@ a:-webkit-any-link{
 
 #App{
     background-image: url('https://i.postimg.cc/HkLMm7BN/Celebratory-Sites.png');
+}
+
+footer{
+    background-color: black;
+    color: var(--cor1);
+    padding: 20px;
 }
 
 @media (max-width: 918px){
