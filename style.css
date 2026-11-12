@@ -16,7 +16,7 @@ header{
 }
 header > h1{
     color: white;
-    font-size: 3em;
+    font-size: 3.5em;
     padding-top: 18vh;
     padding-bottom: 20px;
 }
@@ -116,14 +116,17 @@ a:-webkit-any-link{
 
 #SAIBER{
     background: url("https://i.postimg.cc/k4rMWTPq/SAIBER.png");
+    border-radius: 0px 0px 6px 6px;
 }
 
 #dulce{
     background-image: url('https://i.postimg.cc/PqNWcrcq/Logo-Dulce.png');
+    border-radius: 0px 0px 6px 6px;
 }
 
 #App{
     background-image: url('https://i.postimg.cc/HkLMm7BN/Celebratory-Sites.png');
+    border-radius: 0px 0px 6px 6px;
 }
 
 footer{
@@ -134,7 +137,10 @@ footer{
 
 @media (max-width: 918px){
     header{
-        font-size: 3vw;
+        font-size: 3.2vw;
+    }
+    header > p{
+        font-size: 1.2em;
     }
 
     picture > img{
