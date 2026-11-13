@@ -148,9 +148,7 @@ footer > section{
     text-align: center;
     padding: 50px 100px;
 }
-footer > section > *{
-    max-width: 100%;
-}
+
 
 .phrase{
     text-align: justify;
@@ -385,9 +383,6 @@ button{
         font-size: 1.2em;
     }
 
-    a{
-        padding: 1.5vw;
-    }
     a.arrow-link{
         font-size: 4vw;
     }
