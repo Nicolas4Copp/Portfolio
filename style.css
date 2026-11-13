@@ -103,13 +103,13 @@ article > p{
     opacity: 1;
 }
 
-a{
+.view-more{
     text-align: center;
     background-color: #D26760;
     padding: 8px;
     border-radius: 0px 0px 6px 6px;
 }
-a:-webkit-any-link{
+a:-webkit-any-link.view-more{
     text-decoration: none;
     color: #60D18F;
 }
@@ -130,9 +130,30 @@ a:-webkit-any-link{
 }
 
 footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     background-color: black;
     color: whitesmoke;
     padding: 20px;
+}
+footer > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    text-align: center;
+    padding: 50px 100px;
+}
+footer > section > *{
+    max-width: 100%;
+}
+
+.phrase{
+    text-align: justify;
 }
 
 /* app.html and SAIBER.html */
@@ -203,6 +224,10 @@ article.prot > p{
     padding: 5px 20px;
 }
 
+a:-webkit-any-link{
+    text-decoration: none;
+    color: whitesmoke;
+}
 a.arrow-link{
     display: flex;
     align-items: center;
