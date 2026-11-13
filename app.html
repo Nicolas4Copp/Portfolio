@@ -1,169 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="app-page">
 <head>
+    <link rel="stylesheet" href="style.css">    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        *{
-            margin: 0;
-        }
-        html, body{
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-
-        header{
-            background-color: black;
-        }
-        header > h1{
-            text-align: center;
-            color: white;
-            font-size: 5em;
-            font-family:Georgia, 'Times New Roman', Times, serif;
-            padding-top: 8vh;
-            padding-bottom: 8vh;
-        }
-
-        main{
-            background-color: #F2E6CF;
-            padding-top: 5vh;
-            padding-bottom: 60px;
-        }
-        article > p{
-            font-size: 1.2em;
-            padding: 20px;
-            text-indent: 15px;
-            text-align: justify;
-        }
-
-        #iphone{
-            position: relative;
-            margin: 0 auto;
-            width: min(311px, calc(100% - 24px));
-            aspect-ratio: 311 / 627;
-            background: url(imgs/frame-iphone.png) center / 100% 100% no-repeat;
-        }
-
-        #tela-wrap{
-            position: absolute;
-            left: 7.07%;
-            top: 12.8%;
-            width: 85.85%;
-            height: 75.3%;
-            overflow: hidden;
-        }
-        #tela{
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            width: calc(100% + 17px);
-            height: 100%;
-            border: 0;
-        }
-
-        a{
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: black;
-            font-size: 3vw;
-            width: 165px;
-        }
-        #seta{
-            width: 100px;
-        }
-
-        
-
-        .comp{
-            background-color: white;
-            margin: 50px 0px;
-            text-align: center;
-        }
-        .comp > img{
-            width: 45%;
-        }
-        #imag{
-            width: 60%;
-        }
-
-        #txtapp{
-            font-size: 3em;
-            text-align: center;
-            margin: 100px;
-        }
-
-        @media (max-width: 918px) {
-            header > h1{
-                font-size: 3em;
-            }
-
-            article{
-                display: flex;
-                flex-direction: column;
-                gap: 500px;
-            }
-            article > p{
-                font-size: 1.2em;
-            }
-            a{
-                font-size: 4vw;
-            }
-            #txtapp{
-                font-size: 2em;
-                margin: 40px 16px;
-            }
-
-            #tela{
-                width: 100%;
-            }
-            
-        }
-    </style>
-    <title>Document</title>
+    <title>App Shopping-lists</title>
 </head>
 <body>
-    <header>
-        <h1>Shopping-lists</h1>
+    <header class="project-header">
+        <h1 class="app-title">Shopping-lists</h1>
     </header>
-    <main>
-        <a href="home.html" rel="prev" ><img id="seta" src="imgs/seta.png" alt="Link para página principal"> Back</a>
+    <main class="project-main">
+        <a href="home.html" rel="prev" class="arrow-link"><img id="seta" src="imgs/seta.png" alt=""> Back</a>
 
-        <article>  
-            <p>Although this was a relatively simple application, its primary purpose was to explore and learn rather than to address an essential need. Despite its simplicity, it resulted in a practical and useful tool for everyday life.
-
+        <article class="app-article">  
+            <p class="app-text">Although this was a relatively simple application, its primary purpose was to explore and learn rather than to address an essential need. Despite its simplicity, it resulted in a practical and useful tool for everyday life.
+                <br>
             The development process began with creating an initial draft and wireframe in Canva. I then used ChatGPT to analyze my designs and transform my ideas into a structured prompt for Google AI Studio's LLM.
-
+                <br>
             After several iterations, adjustments, and additional coding to refine the AI-generated results, I successfully built and installed a native Android APK on my smartphone through a USB connection.
-
+                <br>
             This project gave me hands-on experience with AI-assisted development, wireframing, prompt engineering, and the process of turning an initial concept into a working mobile application.</p>
         </article>
         
         <section class="comp">
             <h2>1.</h2>
-            <img src="imgs/bfaf-removebg-preview.png" alt="Antes de pronto">
-            <img src="imgs/bfaf__1_-removebg-preview.png" alt="Depois de pronto">
+            <img src="imgs/bfaf-removebg-preview.png" alt="sketch new list">
+            <img src="imgs/bfaf__1_-removebg-preview.png" alt="ready new list">
         </section>
         <section class="comp">
             <h2>2.</h2>
-            <img src="imgs/bfaf__5_-removebg-preview.png" alt="Antes de pronto">
-            <img src="imgs/bfaf__2_-removebg-preview.png" alt="Depois de pronto">
+            <img src="imgs/bfaf__5_-removebg-preview.png" alt="sketch new iten">
+            <img src="imgs/bfaf__2_-removebg-preview.png" alt="ready new iten">
         </section>
         <section class="comp">
             <h2>3.</h2>
-            <img src="imgs/bfaf__6_-removebg-preview.png" alt="Antes de pronto">
-            <img src="imgs/bfaf__3_-removebg-preview.png" alt="Depois de pronto">
+            <img src="imgs/bfaf__6_-removebg-preview.png" alt="sketch budget">
+            <img src="imgs/bfaf__3_-removebg-preview.png" alt="ready budget">
         </section>
         <section class="comp">
             <h2>4.</h2>
-            <img id="imag2" src="imgs/bfaf__7_-removebg-preview.png" alt="Antes de pronto">
-            <img id="imag" src="imgs/bfaf__4_-removebg-preview.png" alt="Depois de pronto">
+            <img src="imgs/bfaf__7_-removebg-preview.png" alt="sketch set budget">
+            <img id="imag" src="imgs/bfaf__4_-removebg-preview.png" alt="ready set budget">
         </section>
         <h2 id="txtapp">Actual App working online</h2>
-        <section id="iphone">
-                 <div id="tela-wrap">
-                     <iframe id="tela" frameborder="0" src="https://shopping-lists-budget-manager.ai.studio"></iframe>
+        <section class="iphone">
+                 <div class="tela-wrap">
+                     <iframe class="tela" src="https://shopping-lists-budget-manager.ai.studio"></iframe>
                  </div>
         </section>
     </main>

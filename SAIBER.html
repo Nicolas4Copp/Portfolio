@@ -1,187 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        *{
-            margin: 0;
-        }
-
-        header{
-            background-color: black;
-        }
-        header > h1{
-            text-align: center;
-            color: white;
-            font-size: 6em;
-            font-family:Georgia, 'Times New Roman', Times, serif;
-            padding-top: 8vh;
-            padding-bottom: 8vh;
-        }
-        header > p{
-            text-align: center;
-            color: rgb(195, 195, 195);
-            padding-bottom: 2.5vh;
-            font-size: 3em;
-        }
-
-        main{
-            background-color: #F2E6CF;
-            padding-top: 5vh;
-            padding-bottom: 60px;
-        }
-        article{
-            margin-bottom: 30px;
-        }
-        article > p{
-            font-size: 1.5em;
-            padding: 20px;
-            text-indent: 15px;
-            text-align: justify;
-        }
-
-        a{
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            color: black;
-            font-size: 3vw;
-            width: 165px;
-        }
-        #seta{
-            width: 100px;
-        }
-
-        h2{
-            font-size: 3em;
-            padding-left: 2%;
-        }
-
-        #insta-wrap{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-        }
-        #insta{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            margin-bottom: -14px;
-        }
-        #insta-more{
-            background-color: #D26760;
-            border-radius: 0px 0px 6px 6px;
-            cursor: pointer;
-            color: black;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 1.25rem;
-            text-decoration: underline;
-            padding: 4px 8px;
-            max-width: 540px;
-            min-width: 100px;
-            width: 100%;
-        }
-
-        ul{
-           font-size: 1.9vw; 
-           margin: 2em 1em;
-        }
-        #iphone{
-            position: relative;
-            margin: 0 auto;
-            width: min(311px, calc(100% - 24px));
-            aspect-ratio: 311 / 627;
-            background: url(imgs/frame-iphone.png) center / 100% 100% no-repeat;
-        }
-
-        #tela-wrap{
-            position: absolute;
-            left: 7.07%;
-            top: 12.8%;
-            width: 85.85%;
-            height: 75.3%;
-            overflow: hidden;
-        }
-        #tela{
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            width: calc(100% + 17px);
-            height: 100%;
-            border: 0;
-        }
-
-        .prot > p{
-            padding: 5px 20px;
-        }
-
-        button{
-            border: 0px;
-        }
-        #expo{
-            text-align: center;
-        }
-        #expo > img{
-            width: 50vw;
-        }
-
-        @media (max-width: 918px) {
-            header > p{
-                padding: 0px 4px 2.5vw 4px;
-                font-size: 4.2vw;
-            }
-
-            h2{
-                font-size: 2.2em;
-            }
-
-            article > p{    
-                font-size: 1.2em;
-            }
-            article{
-                display: flex;
-                flex-direction: column; 
-            }
-            a{
-                font-size: 4vw;
-            }
-            ul{
-                font-size: 1.5em;
-                margin: 2em 1px;
-            }
-
-            #tela{
-                width: 100%;
-            }
-
-            #expo > img{
-                width: 100%;
-            }
-            
-        }
-    </style>
-    <title>Document</title>
+    <title>Project SAIBER</title>
 </head>
 <body>
-    <header>
-        <h1>SAIBER</h1>
-        <p>Sistema Automático de Irrigação à Base de Energia Renovável <br>
+    <header class="project-header">
+        <h1 class="saiber-title">SAIBER</h1>
+        <p class="saiber-tagline">Sistema Automático de Irrigação à Base de Energia Renovável <br>
         Renewable Energy-Powered Automated Irrigation System
         </p>
     </header>
-    <main>
-        <a href="home.html" rel="prev" ><img id="seta" src="imgs/seta.png" alt="Link para página principal"> Back</a>
+    <main class="project-main">
+        <a href="home.html" rel="prev" class="arrow-link"><img id="seta" src="imgs/seta.png" alt=""> Back</a>
 
         <section>
-            <article>
-                <p>Developed in 2024 as a collaborative project with my classmates at InediTec School, this project was designed to address the needs of people who spend extended periods away from home and require a reliable solution to keep their plants properly watered and cared for.
+            <article class="saiber-article">
+                <p class="saiber-text">Developed in 2024 as a collaborative project with my classmates at InediTec School, this project was designed to address the needs of people who spend extended periods away from home and require a reliable solution to keep their plants properly watered and cared for.
                 <br>
                 The project consists of a low-cost, sustainable automated irrigation system that also monitors soil pH levels, helping users maintain suitable conditions for plant growth while reducing the need for constant manual maintenance.</p>
             </article>
-            <h2>Material and components</h2>
+            <h2 class="saiber-heading">Material and components</h2>
             <ul>
                 <li><abbr title="Used to generate electrical power for the system, promoting renewable energy use and sustainability.">2 Solar Panels;</abbr></li>
                 <li><abbr title="Responsible for controlling and activating the system's electronic components.">1 Arduino Micro Board;</abbr></li>
@@ -191,20 +32,20 @@
                 <li><abbr title="Designed to measure the soil's pH levels.">1 pH Sensor (Prototype);</abbr></li>
                 <li><abbr title=" Manages battery charging, allowing the system to operate using stored energy when sunlight is unavailable.">1 Battery Charging Module;</abbr></li>
             </ul>
-            <article>
-                <h2>Development Process</h2>
-                <p>
+            <article class="saiber-article">
+                <h2 class="saiber-heading">Development Process</h2>
+                <p class="saiber-text">
                 We connected two solar panels to a backup battery system, integrating them with the irrigation motor to provide the power needed to operate the pump. Additionally, we assembled an Arduino-based system with a traffic light indicator to monitor and display soil moisture levels.
                 </p>
-                <p>We also developed the concept and initial programming for a pH sensor designed to collect soil pH measurements and send the data to a custom-built mobile application.</p>
-                <h2>Note:</h2>
-                <p>The pH monitoring and mobile application integration remained at the theoretical and prototype stages, as the project was not continued to full implementation.</p>
+                <p class="saiber-text">We also developed the concept and initial programming for a pH sensor designed to collect soil pH measurements and send the data to a custom-built mobile application.</p>
+                <h2 class="saiber-heading">Note:</h2>
+                <p class="saiber-text">The pH monitoring and mobile application integration remained at the theoretical and prototype stages, as the project was not continued to full implementation.</p>
             </article>
         </section>
         <section>
-            <h2>Scientific Exhibition</h2>
-            <article>
-                <p>
+            <h2 class="saiber-heading">Scientific Exhibition</h2>
+            <article class="saiber-article">
+                <p class="saiber-text">
                     As a result of our work on the SAIBER project, our supervising teachers selected our team to present it at MOSCLING (Scientific Exhibition of the Northern Coast of Rio Grande do Sul).</p>
             </article>
         </section>
@@ -250,40 +91,40 @@
             })();
         </script>
         <section>
-            <article>
-                <P>During the event, we had the opportunity to showcase the system's functionalities and present our work to representatives of the Federal University of Rio Grande do Sul (UFRGS).</p>
+            <article class="saiber-article">
+                <p class="saiber-text">During the event, we had the opportunity to showcase the system's functionalities and present our work to representatives of the Federal University of Rio Grande do Sul (UFRGS).</p>
             </article>
         </section>
         <section>
-            <article class="prot" >
-                <h2>Mobile App Prototype</h2>
+            <article class="prot saiber-article">
+                <h2 class="saiber-heading">Mobile App Prototype</h2>
 
-                <p>This is the initial prototype of the mobile application designed to complement the SAIBER project.</p>
+                <p class="saiber-text">This is the initial prototype of the mobile application designed to complement the SAIBER project.</p>
 
-                <p>Both the visual design and programming are intentionally simple, as this is a low-fidelity prototype. Its main purpose was to demonstrate the application's potential features during the science fair and illustrate how it would integrate with the fully developed irrigation system.</p>
+                <p class="saiber-text">Both the visual design and programming are intentionally simple, as this is a low-fidelity prototype. Its main purpose was to demonstrate the application's potential features during the science fair and illustrate how it would integrate with the fully developed irrigation system.</p>
 
-                <p>The prototype served as a visual and functional concept, helping communicate how users could interact with the system and access information collected by its sensors.</p>
+                <p class="saiber-text">The prototype served as a visual and functional concept, helping communicate how users could interact with the system and access information collected by its sensors.</p>
             </article>
-            <article id="iphone">
-                 <div id="tela-wrap">
-                     <iframe id="tela" frameborder="0" src="https://previewv3.fabricadeaplicativos.com.br/saiber_3123889/home"></iframe>
+            <article class="iphone">
+                 <div class="tela-wrap">
+                     <iframe class="tela" src="https://previewv3.fabricadeaplicativos.com.br/saiber_3123889/home"></iframe>
                  </div>
             </article>
-            <article>
+            <article class="saiber-article">
                 <div id="expo">
                     
                     <img src='https://i.postimg.cc/VL6ZDdBw/Whats-App-Image-2026-11-12-at-15-14-00.jpg'>
                     <p>The photograph showcases our SAIBER project, featuring the Arduino enclosure, solar panels, and pepper plant. A smartphone displaying the app prototype completes the setup, demonstrating how the hardware and software were designed to work together.</p>
                 </div>
             </article>
-            <article class="prot">
-                <h2>Personal Growth and Development</h2>
+            <article class="prot saiber-article">
+                <h2 class="saiber-heading">Personal Growth and Development</h2>
 
-                <p>This application is a great example of how much I have grown as a designer and developer when compared to my more recent projects.</p>
+                <p class="saiber-text">This application is a great example of how much I have grown as a designer and developer when compared to my more recent projects.</p>
 
-                <p>At the time, I was just beginning my journey in design and programming. Although I am still developing my skills and have not yet established myself as a professional, I have gained valuable experience and significantly improved my technical knowledge since then.</p>
+                <p class="saiber-text">At the time, I was just beginning my journey in design and programming. Although I am still developing my skills and have not yet established myself as a professional, I have gained valuable experience and significantly improved my technical knowledge since then.</p>
 
-                <p>Looking back at this project allows me to recognize my progress, understand how far I have come, and appreciate the continuous learning process behind my development.</p>
+                <p class="saiber-text">Looking back at this project allows me to recognize my progress, understand how far I have come, and appreciate the continuous learning process behind my development.</p>
             </article>
         </section>
             
