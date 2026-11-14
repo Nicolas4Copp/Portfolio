@@ -45,7 +45,7 @@ main{
 main > section{
     display: flex;
     gap: 10vh;
-    margin: 0px 5vw 15vw 5vw;
+    margin: 0px 5vw 5vw 5vw;
     flex-wrap: wrap;
     justify-content: center;   
 }
@@ -61,6 +61,9 @@ main > #projects{
 main > h2{
     text-align: center;
     margin: 5vw;
+}
+.h2-home{
+    font-size: 2.5em;
 }
 
 picture > img{
@@ -204,14 +207,7 @@ main.project-main > section{
 article.saiber-article{
     margin-bottom: 30px;
 }
-article > p.app-text{
-    font-size: 1.2em;
-    padding: 20px;
-    text-indent: 15px;
-    text-align: justify;
-    width: auto;
-}
-article > p.saiber-text{
+article > p.app-text, p.saiber-text{
     font-size: 1.5em;
     padding: 20px;
     text-indent: 15px;
@@ -334,13 +330,26 @@ button{
     font-style: italic;
 }
 
+.copyright{
+    display: block;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
 
 @media (max-width: 918px){
     header{
+        text-align: center;
         font-size: 3.2vw;
+        padding-left: 0px;
     }
     header > p{
+        padding-left: 2%;
         font-size: 1.2em;
+        text-align: left;
     }
     header > h1.app-title{
         font-size: 3em;
@@ -350,6 +359,9 @@ button{
         font-size: 4.2vw;
     }
 
+    .h2-home{
+    font-size: 1.5em;
+    }
     h2.saiber-heading{
         font-size: 2.2em;
     }
@@ -409,6 +421,9 @@ button{
         width: 40vw ;
     }
 
+    footer{
+        gap: 10px;
+    }
     footer > section{
         width: 90%;
     }
