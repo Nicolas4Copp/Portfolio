@@ -206,13 +206,27 @@ main.project-main > section{
 
 article.saiber-article{
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+    gap: 2vw;
+}
+.app-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+    gap: 2vw;
 }
 article > p.app-text, p.saiber-text{
-    font-size: 1.5em;
-    padding: 20px;
+    font-size: 2em;
     text-indent: 15px;
+    padding: 20px;
     text-align: justify;
-    width: auto;
+    width: 500px;
 }
 article.prot > p{
     padding: 5px 20px;
@@ -393,6 +407,7 @@ button{
     article > p.app-text,
     article > p.saiber-text{
         font-size: 1.2em;
+        width: 400px;
     }
 
     a.arrow-link{
