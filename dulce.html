@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="project-header" id="dulce-background">
+        <h1 class="dulce-title">Dulce Chile</h1>
+    </header>
+    <main class="project-main">
+        <a href="home.html" rel="prev" class="arrow-link"><img id="seta" src="imgs/seta.png" alt=""> Back</a>
+
+        <section>
+            <h2 class="dulce-heading">The Story Behind Dulce Chile</h2>
+
+            <article class="dulce-article">
+                <p class="dulce-text">Dulce Chile began in November 2025, when I found out that my grandfather was going through a difficult health situation. Knowing that he lived in southern Chile, I realized that distance was a major obstacle, but I also knew I wanted to do something to see him.</p>
+                <p class="dulce-text">I started looking for ways to raise enough money to afford a plane ticket and visit him. That was when I came up with Dulce Chile, a small personal business created with the purpose of selling homemade gourmet sweets and turning that goal into reality.</p>
+                <p class="dulce-text">More than just a small business, Dulce Chile became a personal initiative driven by family, determination, and the desire to turn an idea into something meaningful.</p>
+            </article>
+        </section>
+        <section class="section-deco1">
+           
+            <article class="dulce-article">
+                <h2 class="dulce-heading">My Journey</h2>
+                <p class="dulce-text">
+                    Initially, I was working as an apprentice at Mãe de Deus Hospital. However, I soon realized that my apprentice salary would not be enough to achieve my goal. I would also have to leave my job if I wanted to travel to Chile and visit my grandfather.
+                    I shared my plans with my family, and they suggested selling homemade sweets as an alternative way to raise money. That was the starting point. After learning how to prepare different types of sweets and developing a logo for the business, I finally felt ready to launch Dulce Chile.
+                </p>
+                <p class="dulce-text">
+                    I invested the money from my final paycheck in ingredients and began producing sweets to sell. I went out into the streets to find customers, asked friends for support, had my mother sell products at her workplace, and promoted the business online to reach as many people as possible.
+                    By mid-December, I had already raised enough money to purchase my plane tickets. Even better, I had significantly exceeded my original fundraising goal. I had sold hundreds of sweets, and after securing both my outbound and return flights, I used part of the extra money to buy Christmas gifts for everyone who had supported me, as well as for my family in Chile.
+                </p>
+            </article>
+        </section>
+        <section>  
+            <h2 class="dulce-heading">The Day I Made It Happen</h2>
+            <div id="insta-wrap">
+            <div id="insta">
+                
+                <blockquote
+                    class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/DTlYiw_EYik/?utm_source=ig_embed&amp;utm_campaign=loading"
+                    data-instgrm-version="14"
+                    style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);"
+                ></blockquote>
+            </div>
+            <button id="insta-more" type="button" aria-expanded="false">View more</button>
+        </div>
+        <script async src="//www.instagram.com/embed.js"></script>
+        <script>
+            (function () {
+                const permalink = 'https://www.instagram.com/p/DTlYiw_EYik/?utm_source=ig_embed&amp;utm_campaign=loading';
+                const container = document.getElementById('insta');
+                const button = document.getElementById('insta-more');
+                let showCaption = false;
+
+                function renderEmbed() {
+                    const captionAttr = showCaption ? ' data-instgrm-captioned' : '';
+                    container.innerHTML =
+                        '<blockquote class="instagram-media"' + captionAttr +
+                        ' data-instgrm-permalink="' + permalink + '"' +
+                        ' data-instgrm-version="14"' +
+                        ' style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin:1px; max-width:540px; min-width:326px; padding:0; width:calc(100% - 2px);">' +
+                        '</blockquote>';
+
+                    if (window.instgrm && window.instgrm.Embeds) {
+                        window.instgrm.Embeds.process();
+                    }
+                }
+
+                button.addEventListener('click', function () {
+                    showCaption = !showCaption;
+                    button.textContent = showCaption ? 'View less' : 'View more';
+                    button.setAttribute('aria-expanded', String(showCaption));
+                    renderEmbed();
+                });
+            })();
+        </script>
+        </section>
+        <section class="section-deco1">
+            <h2 class="dulce-heading">What i learned</h2>
+            <article class="dulce-article">
+                <p class="dulce-text">This experience taught me that determination and a willingness to take action can turn seemingly impossible goals into reality. What many people might consider an unattainable dream, I managed to accomplish in a relatively short time through dedication, initiative, and hard work.</p>
+                <p class="dulce-text">It changed the way I see challenges and my own potential. Sometimes, all it takes is the courage to take the first step, the commitment to keep going, and the determination to see things through.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section class="phrase">
+            <p>Every project is an opportunity to learn, explore new ideas, and turn creativity into something meaningful. My journey in design and technology is driven by curiosity, continuous improvement, and the desire to create solutions that make a difference. This portfolio represents not only what I have accomplished so far, but also everything I am still eager to discover, build, and achieve.</p>
+        </section>
+        <section>
+            <h3>Wanna work with me?</h3>
+            <p>Email: nicolas.fernando.coppola@gmail.com</p>
+            <a href="https://github.com/Nicolas4Copp">Github: github.com/Nicolas4Copp</a>
+        </section>
+        <section>
+            <address> Cachoeirinha/RS, Brasil.</address>
+        </section>
+    </footer>
+    <span class="copyright">© 2026 Nicolas Coppola. All Rights Reserved.</span>
+</body>
+</html>

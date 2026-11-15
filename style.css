@@ -6,6 +6,7 @@
 
 :root{
     --cor1: rgba(141, 138, 138, 0.757);
+    --cor2: #f55656;
     
 }
 
@@ -39,13 +40,13 @@ header > p > span::before{
 
 main{
     background-color: #F2E6CF;
-    padding: 5vh 0px;
+    padding: 50px 0px 0px 0px;
     
 }
 main > section{
     display: flex;
     gap: 10vh;
-    margin: 0px 5vw 5vw 5vw;
+    margin: 0px 5vw 0px 5vw;
     flex-wrap: wrap;
     justify-content: center;   
 }
@@ -57,6 +58,7 @@ main > #About{
 main > #projects{
     gap: 8vw;
     margin: 0px 12vw;
+    padding-bottom: 50px;
 }
 main > h2{
     text-align: center;
@@ -108,13 +110,14 @@ article > p{
 
 .view-more{
     text-align: center;
-    background-color: #D26760;
+    background-color: var(--cor2);
     padding: 8px;
     border-radius: 0px 0px 6px 6px;
 }
 a:-webkit-any-link.view-more{
+    font-weight: bold;
     text-decoration: none;
-    color: #60D18F;
+    color: black;
 }
 
 #SAIBER{
@@ -169,15 +172,14 @@ header.project-header{
     padding-left: 0;
     background-color: black;
 }
-header > h1.app-title,
-header > h1.saiber-title{
+header > h1.app-title, h1.saiber-title, h1.dulce-title{
     text-align: center;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 8vh;
     padding-bottom: 8vh;
 }
-header > h1.app-title{
+header > h1.app-title, h1.dulce-title{
     font-size: 5em;
 }
 header > h1.saiber-title{
@@ -197,15 +199,21 @@ header > p.saiber-tagline::after{
 main.project-main{
     background-color: #F2E6CF;
     padding-top: 5vh;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+
 }
 main.project-main > section{
     display: block;
     gap: 0;
 }
 
+.section-deco1{
+    background-color: var(--cor2);
+    margin: 0px;
+    padding: 10px 0px;
+}
+
 article.saiber-article{
-    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,7 +221,7 @@ article.saiber-article{
     padding: 50px 0px;
     gap: 2vw;
 }
-.app-article{
+.app-article, .dulce-article{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,7 +229,7 @@ article.saiber-article{
     padding: 50px 0px;
     gap: 2vw;
 }
-article > p.app-text, p.saiber-text{
+article > p.app-text, p.saiber-text, p.dulce-text{
     font-size: 2em;
     text-indent: 15px;
     padding: 20px;
@@ -269,10 +277,11 @@ main.project-main > section.comp{
     margin: 100px;
 }
 
-h2.saiber-heading{
+h2.saiber-heading, h2.dulce-heading{
     font-size: 3em;
     padding-left: 2%;
     margin-bottom: revert;
+    padding-top: 20px;
 }
 
 #insta-wrap{
@@ -281,6 +290,7 @@ h2.saiber-heading{
     align-items: center;
 }
 #insta{
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -298,6 +308,7 @@ h2.saiber-heading{
     max-width: 540px;
     min-width: 100px;
     width: 100%;
+    margin-bottom: 5%;
 }
 
 ul{
@@ -332,6 +343,7 @@ ul{
 
 button{
     border: 0px;
+    font-weight: bold;
 }
 #expo{
     text-align: center;
@@ -365,7 +377,7 @@ button{
         font-size: 1.2em;
         text-align: left;
     }
-    header > h1.app-title{
+    header > h1.app-title, h1.dulce-title{
         font-size: 3em;
     }
     header > p.saiber-tagline{
@@ -376,7 +388,7 @@ button{
     .h2-home{
     font-size: 1.5em;
     }
-    h2.saiber-heading{
+    h2.saiber-heading, h2.dulce-heading{
         font-size: 2.2em;
     }
 
@@ -391,23 +403,19 @@ button{
         opacity: 1;   
     }
 
-    article.app-article{
+    article.app-article, .saiber-article, .dulce-article{
         display: flex;
         flex-direction: column;
     }
-    article.saiber-article{
-        display: flex;
-        flex-direction: column;
-    }
+
     article > p{
         font-size: 1.2em;
         text-align: justify;
         width: 300px;
     }
-    article > p.app-text,
-    article > p.saiber-text{
+    article > p.app-text, p.saiber-text, p.dulce-text{
         font-size: 1.2em;
-        width: 400px;
+        width: 350px;
     }
 
     a.arrow-link{
