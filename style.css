@@ -199,15 +199,16 @@ header > p.saiber-tagline::after{
 main.project-main{
     background-color: #F2E6CF;
     padding-top: 5vh;
-    padding-bottom: 50px;
-
 }
 main.project-main > section{
     display: block;
     gap: 0;
 }
+#pad{
+    padding-bottom: 50px;
+}
 
-.section-deco1{
+.deco1{
     background-color: var(--cor2);
     margin: 0px;
     padding: 10px 0px;
