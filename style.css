@@ -267,12 +267,12 @@ main.project-main > section.comp{
     text-align: center;
 }
 .comp > img{
-    width: 45%;
+    width: 90%;
 }
 #imag{
     width: 60%;
 }
-#txtapp{
+.txtapp{
     font-size: 3em;
     text-align: center;
     margin: 100px;
@@ -428,7 +428,7 @@ button{
         margin: 2em 1px;
     }
 
-    #txtapp{
+    .txtapp{
         font-size: 2em;
         margin: 40px 16px;
     }
