@@ -452,3 +452,26 @@ button{
         width: 90%;
     }
 }
+
+@view-transition {
+    navigation: auto;
+}
+
+#SAIBER { view-transition-name: saiber; }
+#dulce { view-transition-name: dulce; }
+#App   { view-transition-name: app; }
+
+header:has(.saiber-title) { view-transition-name: saiber; }
+header:has(.dulce-title)  { view-transition-name: dulce; }
+header:has(.app-title)    { view-transition-name: app; }
+
+::view-transition-group(*) {
+    animation-duration: 250ms;
+    animation-timing-function: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    @view-transition {
+        navigation: none;
+    }
+}
