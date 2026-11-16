@@ -365,7 +365,10 @@ button{
     width: 100%;
     padding: 10px 0px;
 }
-
+#credits{
+    text-indent: 0px;
+    text-align: left;
+}
 
 @media (max-width: 918px){
     header{
